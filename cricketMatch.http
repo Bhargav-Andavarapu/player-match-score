@@ -1,0 +1,32 @@
+###
+//API-1 Get all players
+GET http://localhost:3000/players/
+
+###
+//API-2 Get a player
+GET http://localhost:3000/players/5
+
+###
+//API-3 Update Player Details
+PUT http://localhost:3000/players/5/
+Content-Type: application/json
+
+{
+    "playerName": "Yuvraj"
+}
+
+###
+//API-4 Get Match Details
+GET http://localhost:3000/matches/5/
+
+###
+//API-5 Get a Player All Match Details
+GET http://localhost:3000/players/2/matches
+
+###
+//API-6 Get all Players for Specific Match
+GET http://localhost:3000/matches/1/players
+
+###
+//API-7 Player Stats
+GET http://localhost:3000/players/5/playerScores
